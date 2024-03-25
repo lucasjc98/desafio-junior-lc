@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Desafio Junior - IPAG</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="../style.css" rel="stylesheet">
+<link href="exercicio9.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="header">
+  Desafio iPag - Desenvolvedor(a) Júnior
+</div>
+
+<div class="container">
+  <a href="javascript:history.back()">
+    <span class="botao-voltar">
+      <i class="fa fa-chevron-left"></i>
+      Voltar
+    </span>
+  </a>
+  <h1>Simulador de Financiamento</h1>
+  <div class="menu">
+    <div id="container-ex9">
+      <label for="total">Valor Total do Financiamento:</label>
+      <input type="number" id="total" placeholder="Digite o valor total do financiamento">
+      <label for="parcelas">Quantidade de Parcelas:</label>
+      <input type="number" id="parcelas" placeholder="Digite a quantidade de parcelas">
+      <label for="juros">Taxa de Juros Anual (%):</label>
+      <input type="number" id="juros" placeholder="Digite a taxa de juros anual">
+      <button onclick="calcular()">Calcular</button>
+      <div id="result"></div>
+    </div>
+  </div>
+</div>
+
+<script src="exercicio9.js"></script>
+</body>
+</html>
+

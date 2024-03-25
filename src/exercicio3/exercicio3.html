@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Desafio Junior - IPAG</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="../style.css" rel="stylesheet">
+<link href="exercicio3.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="header">
+  Desafio iPag - Desenvolvedor(a) Júnior
+</div>
+
+<div class="container">
+  <a href="javascript:history.back()">
+    <span class="botao-voltar">
+      <i class="fa fa-chevron-left"></i>
+      Voltar
+    </span>
+  </a>
+  <h1>Área de Formas Geométricas</h1>
+  <div class="menu">
+    <div id="container-ex3">
+      <label for="forma">Forma geométrica:</label>
+      <select id="forma" name="forma">
+        <option value="quadrado">Quadrado</option>
+        <option value="retangulo">Retângulo</option>
+        <option value="triangulo">Triângulo</option>
+        <option value="circulo">Círculo</option>
+      </select>
+      <br>
+      <div id="inputs-forma">
+        </div>
+      <br>
+      <button id="calcular" onclick="calcularArea()">Calcular Área</button>
+      <br>
+      <div class="resultado">
+        <p id="result"></p>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="exercicio3.js"></script>
+</body>
+</html>

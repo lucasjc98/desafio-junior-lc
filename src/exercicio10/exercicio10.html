@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Desafio Junior - IPAG</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="../style.css" rel="stylesheet">
+<link href="exercicio10.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="header">
+  Desafio iPag - Desenvolvedor(a) Júnior
+</div>
+
+<div class="container">
+  <a href="javascript:history.back()">
+    <span class="botao-voltar">
+      <i class="fa fa-chevron-left"></i>
+      Voltar
+    </span>
+  </a>
+  <h1>Manipulação de API</h1>
+  <div class="menu">
+    <div id="container-ex10">
+      <h2>Informe o nome do usuário do GitHub:</h2>
+      <input type="text" id="username" placeholder="Nome de usuário">
+      <button onclick="getRepositories()">Obter Repositórios</button>
+
+      <div id="repositories"></div>
+    </div>
+  </div>
+</div>
+
+<script src="exercicio10.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,32 @@
+.container-ex2 {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+#encontrar {
+  margin-top: 10px;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.resultado {
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.resultado p {
+  margin: 0;
+}

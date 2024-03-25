@@ -1,0 +1,54 @@
+.container-ex1 {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs label {
+  margin-right: 10px;
+}
+
+.operacao {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.operacao label {
+  margin-right: 10px;
+}
+
+#calcular {
+  margin-top: 10px;
+  padding: 5px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.resultado {
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.resultado p {
+  margin: 0;
+}
+
+#resultado-valor {
+  font-weight: bold;
+}
+
+.erro {
+  border-color: red;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Desafio Junior - IPAG</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="../style.css" rel="stylesheet">
+<link href="exercicio6.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="header">
+  Desafio iPag - Desenvolvedor(a) Júnior
+</div>
+
+<div id="criar-tarefa" class="container">
+  <a href="javascript:history.back()">
+    <span class="botao-voltar">
+      <i class="fa fa-chevron-left"></i>
+      Voltar
+    </span>
+  </a>
+  <h1>Lista de Tarefas</h1>
+  <div class="menu">
+    <div id="container-ex6">
+      <section id="nova-tarefa">
+        <input type="text" placeholder="Descrição da tarefa" id="txt-descricao">
+        <select id="sel-prioridade">
+          <option value="1">Baixa</option>
+          <option value="2">Média</option>
+          <option value="3">Alta</option>
+        </select>
+        <button id="btn-adicionar">Adicionar</button>
+      </section>
+    
+      <section id="lista-tarefas">
+        <table>
+          <thead>
+            <tr>
+              <th>Descrição</th>
+              <th>Prioridade</th>
+              <th>Status</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+    </div>
+  </div>
+</div>
+<div id="modal-editar-tarefa" class="modal" style="display: none;">
+  <div class="modal-content container">
+    <header>
+      <h2>Editar Tarefa</h2>
+    </header>
+    <main>
+      <form>
+        <input type="hidden" id="tarefa-id" name="tarefa-id" value="0" />
+        <label for="txt-descricao-editar">Descrição:</label>
+        <input type="text" id="txt-descricao-editar">
+        <label for="sel-prioridade-editar">Prioridade:</label>
+        <select id="sel-prioridade-editar">
+          <option value="1">Baixa</option>
+          <option value="2">Média</option>
+          <option value="3">Alta</option>
+        </select>
+        <label for="sel-status-editar">Status:</label>
+        <select id="sel-status-editar">s
+          <option value="pendente">Pendente</option>
+          <option value="andamento">Em andamento</option>
+          <option value="concluida">Concluída</option>
+        </select>
+      </form>
+    </main>
+    <footer>
+      <button style="margin-right: 1rem;" onclick="fecharModal()">Cancelar</button>
+      <button onclick="salvarAlteracao()">Salvar</button>
+    </footer>
+  </div>
+</div>
+
+<script src="exercicio6.js"></script>
+</body>
+</html>
+

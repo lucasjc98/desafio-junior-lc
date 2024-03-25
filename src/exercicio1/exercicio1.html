@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Desafio Junior - IPAG</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="../style.css" rel="stylesheet">
+<link href="exercicio1.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="header">
+  Desafio iPag - Desenvolvedor(a) Júnior
+</div>
+
+<div class="container">
+  <a href="javascript:history.back()">
+    <span class="botao-voltar">
+      <i class="fa fa-chevron-left"></i>
+      Voltar
+    </span>
+  </a>
+  <h1>Calculadora Básica</h1>
+  <div class="menu">
+    <div class="container-ex1">
+      <div class="inputs">
+          <label for="numero1">Primeiro número:</label>
+          <input type="number" id="numero1" name="numero1">
+          <label for="numero2">Segundo número:</label>
+          <input type="number" id="numero2" name="numero2">
+      </div>
+      <div class="operacao">
+          <label for="operacao">Operação:</label>
+          <select id="operacao" name="operacao">
+              <option value="soma">Soma</option>
+              <option value="subtracao">Subtração</option>
+              <option value="multiplicacao">Multiplicação</option>
+              <option value="divisao">Divisão</option>
+          </select>
+      </div>
+      <button id="calcular">Calcular</button>
+      <div class="resultado">
+          <p>Resultado: <span id="resultado-valor"></span></p>
+      </div>
+  </div>
+  </div>
+</div>
+<script src="exercicio1.js"></script>
+</body>
+</html>

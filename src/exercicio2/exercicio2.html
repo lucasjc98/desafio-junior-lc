@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Desafio Junior - IPAG</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="../style.css" rel="stylesheet">
+<link href="exercicio2.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="header">
+  Desafio iPag - Desenvolvedor(a) Júnior
+</div>
+
+<div class="container">
+  <a href="javascript:history.back()">
+    <span class="botao-voltar">
+      <i class="fa fa-chevron-left"></i>
+      Voltar
+    </span>
+  </a>
+  <h1>Maior e Menor entre Três Números</h1>
+  <div class="menu">
+    <div class="container-ex2">
+      <div class="inputs">
+        <p>Digite três números:</p>
+        <input type="number" id="numero1" placeholder="Primeiro número">
+        <input type="number" id="numero2" placeholder="Segundo número">
+        <input type="number" id="numero3" placeholder="Terceiro número">
+        <br>
+        <br>
+      </div>
+      <button id="encontrar" onclick="encontrar()">Encontrar</button>
+      <div class="resultado">
+        <p id="result"></p>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="exercicio2.js"></script>
+</body>
+</html>
